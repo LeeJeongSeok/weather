@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/project?allowPublicKeyRetrieval=true&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1q2w3e4r
+
+  jpa:
+    show-sql: true
+    database: mysql
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
+
+
+openweathermap:
+            key: cbae048dd833b46f5ff64d819bf3991c
+
